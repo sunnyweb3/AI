@@ -1,0 +1,28 @@
+# Use the official Python image as a base
+FROM python:3.11-slim
+
+# Set environment variables
+ENV PYTHONUNBUFFERED=1
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create working directory
+WORKDIR /app
+
+# Copy requirements and install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the necessary configuration, code, and schema files into the container
+COPY request_schema.json /app/request_schema.json
+COPY translate.py /app/translate.py
+
+# Expose the port the app runs on
+EXPOSE 8080
+
+
+# Run the Flask app with Gunicorn for production
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:8080", "translate:app"]
