@@ -1,0 +1,3 @@
+CONFIG_JSON="{\"project_id\": \"<GCP_project_id>\", \"location\": \"us-east1\", \"model_name\": \"text-embedding-005\", \"supported_task_types\": [\"SEMANTIC_SIMILARITY\", \"QUESTION_ANSWERING\", \"RETRIEVAL_QUERY\"]}"
+GOOGLE_APPLICATION_CREDENTIALS=./gcp_service_account_placeholder.json
+
