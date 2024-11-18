@@ -1,0 +1,21 @@
+# FastAPI framework
+fastapi==0.115.5
+uvicorn==0.32.0
+
+# Data validation
+pydantic==2.9.2
+
+# Environment variable management
+python-dotenv==1.0.1
+
+# Google Cloud SDK and Vertex AI
+google-cloud-aiplatform==1.72.0
+google-auth==2.36.0
+grpcio==1.67.1
+grpcio-status==1.67.1
+
+# Machine learning for cosine similarity
+scikit-learn==1.5.2
+scipy==1.14.1
+
+
