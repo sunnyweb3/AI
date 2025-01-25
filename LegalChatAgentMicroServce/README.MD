@@ -81,5 +81,4 @@ This project demonstrates how to deploy scalable, configurable, and efficient AI
 ## Resources
 
 - **Amazon Bedrock Documentation**: [Explore Bedrock](https://aws.amazon.com/bedrock)
-- **Postman Collection**: [Test Your Agent](#)
-- **GitHub Repository**: [Access the Source Code](#)
+
