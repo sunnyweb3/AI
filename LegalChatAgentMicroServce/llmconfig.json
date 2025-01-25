@@ -1,0 +1,21 @@
+{
+    "region_name": "us-east-1",
+    "agentName": "lambda-customer-support-agent",
+    "agent_alias": "lambda-customer-support-agent-alias",
+    "foundationModel": "amazon.nova-lite-v1:0",
+    "instruction": "You are a helpful AI customer support agent.",
+    "agentResourceRoleArn": "arn:aws:iam::502038029821:role/service-role/AmazonBedrockExecutionRoleForAgents_A12U4FDZXJK",
+    "agentTrace": true,
+    "deleteAgent": true,
+    "modelOptions": {
+        
+        "Amazon": [
+            {"Nova Lite": "amazon.nova-lite-v1:0"},
+            {"Nova Micro": "amazon.nova-micro-v1:0"},
+            {"Nova Pro": "amazon.nova-pro-v1:0"},
+            {"Titan Text G1 - Express": "amazon.titan-text-express-v1"},
+            {"Titan Text G1 - Lite": "amazon.titan-text-lite-v1"},
+            {"Titan Text G1 - Premier": "amazon.titan-text-premier-v1:0"}
+        ]
+    }
+}
